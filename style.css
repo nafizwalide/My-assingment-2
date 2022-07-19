@@ -68,3 +68,33 @@ body {
 /* section-1  styles end ------------------------------------ */
 
 /* section-2 styles starts---------------------------- */
+.box {
+    margin-top: 6%;
+    width: 20%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.244);
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 15px;
+    color: white;
+    margin-top: 10%;
+    margin-left: 8%;
+    margin-bottom: 10%;
+    border: 10px solid white;
+    padding: 10px 20px;
+
+}
+
+.little-box h3 a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+#little-box {
+    padding-left: 20px;
+    padding-right: 20px;
+}
