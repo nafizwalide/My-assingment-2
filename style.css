@@ -3,24 +3,32 @@
 /*-----------
  Common and all css starts
 --------- */
+
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 
 /* main style starts-------------- */
+
+
 /* banner styles------------------------------ */
-.container-1 {
+.container {
     width: 80%;
-    margin-left: 10%;
     margin-top: 6%;
+    margin-left: 10%;
     background-color: black;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     border-radius: 20px;
+
+
 }
 
 .banner {
     display: flex;
+    align-items: flex-end;
 
 }
 
@@ -68,33 +76,71 @@ body {
 /* section-1  styles end ------------------------------------ */
 
 /* section-2 styles starts---------------------------- */
+
+
 .box {
-    margin-top: 6%;
-    width: 20%;
-    height: 60%;
-    background-color: rgba(0, 0, 0, 0.244);
-    margin-left: 10%;
-    border-radius: 10px;
-}
-
-h3 {
-    font-size: 15px;
-    color: white;
     margin-top: 10%;
-    margin-left: 8%;
-    margin-bottom: 10%;
-    border: 10px solid white;
-    padding: 10px 20px;
-
+    padding-top: 20px;
+    width: 260px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
 }
 
-.little-box h3 a {
-    text-decoration: none;
-    color: black;
+.first-span {
     background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+
 }
 
-#little-box {
-    padding-left: 20px;
-    padding-right: 20px;
+.sec-span {
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+
 }
+
+.third-span {
+    background-color: tomato;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 10px;
+
+}
+
+/* first box link styles----------------------------- */
+.container-1 {}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+
+}
+
+.parent-blog {
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-top: 30%;
+    margin-block-end: 10%;
+
+}
+
+.blog-image img {
+    width: 80%;
+}
+
+.name {
+    width: 70px;
+    border: 1px solid grey;
+}
+
+.fa-comment-dots {
+    padding-left: 10%;
+}
+
+/* second box styles----------------- */
