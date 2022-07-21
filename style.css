@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 /* main style starts-------------- */
@@ -76,16 +77,35 @@ body {
 /* section-1  styles end ------------------------------------ */
 
 /* section-2 styles starts---------------------------- */
+.tablet-box {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.tablet-box h2 {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-left: 10px;
+}
+
+#third-box {
+    background-color: tomato;
+
+}
 
 .box {
-    margin-top: 10%;
+    margin-top: 50px;
     padding-top: 20px;
     width: 260px;
     height: 200px;
     background-color: black;
     border-radius: 10px;
-    position: absolute;
+
 }
 
 .first-span {
@@ -94,6 +114,11 @@ body {
     padding-right: 5px;
     border-radius: 10px;
 
+}
+
+.first-span a {
+    text-decoration: none;
+    color: black;
 }
 
 .sec-span {
@@ -112,26 +137,55 @@ body {
 
 }
 
+.first-span-2 {
+    background-color: tomato;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 10px;
+}
+
+.third-span-2 {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+.third-span-2 a {
+    text-decoration: none;
+    color: black;
+}
+
 /* first box link styles----------------------------- */
-.container-1 {}
+.container-1 {
+    margin-top: 10%;
+
+}
+
+.match-section {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 5%;
+}
 
 .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: end;
-
 }
 
+
+
 .parent-blog {
+    width: 250px;
     border-radius: 10px;
     border: 1px solid grey;
-    margin-top: 30%;
-    margin-block-end: 10%;
+    margin-top: 20px;
+    margin-left: 20px;
 
 }
 
 .blog-image img {
-    width: 80%;
+    width: 250px;
 }
 
 .name {
@@ -144,3 +198,180 @@ body {
 }
 
 /* second box styles----------------- */
+/* webpage-2 styles------------------------------------------------ */
+.match-section-2 {
+    display: flex;
+    margin-top: 200px;
+}
+
+.blogs-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.parent-blog-2 {
+    border: 1px solid grey;
+    height: 170px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+/* This is optional section ----------------- */
+.optional {
+    visibility: hidden;
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+h2 {
+    border-radius: 10px;
+    background-color: tomato;
+}
+
+/*--------------------
+ third section
+ -----------------------  */
+.footer-sec {
+    margin: 0;
+}
+
+.footer {
+    margin-top: 10%;
+    background-color: black;
+}
+
+
+.footer-name h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer-name hr {
+    width: 80%;
+    color: grey;
+}
+
+.footer-info {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    color: white;
+
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 30px;
+
+
+
+}
+
+/* media Queary starts-------------------- */
+
+/* For Tablet ----------- */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container {
+        width: 110%;
+    }
+
+    .box {
+        visibility: hidden;
+    }
+
+    .tablet-box {
+        width: 120%;
+        visibility: visible;
+        margin-right: 20px;
+        justify-content: center;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .parent-blog {
+        width: 300px;
+    }
+
+    .blog-image img {
+        width: 300px;
+    }
+
+    .optional {
+        visibility: visible;
+    }
+
+    .footer-sec {
+        width: 130%;
+
+    }
+
+    .footer-info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+
+}
+
+/* this responsive is for mobile --------------------------- */
+@media screen and (max-width:767px) {
+    .container {
+        width: 150%;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .intro h1 p a {
+        margin-right: 50px;
+    }
+
+    .image {
+        margin-right: 50px;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box {
+        visibility: hidden;
+    }
+
+    .footer-sec {
+        width: 160%;
+
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
